@@ -81,12 +81,14 @@ function newGame() {
       button.removeAttribute('disabled');
    }
 
+	 // Set up the ideal state for Player starting game.
    playerTurn = true;
 
    let turnInfo = document.getElementById('turnInfo')
    turnInfo.innerText = 'Your turn'
 }
 
+// Set attribures of a button being clicked
 function boardButtonClicked(button) {
 	// TODO: Complete the function
    if(playerTurn == true){
@@ -97,11 +99,13 @@ function boardButtonClicked(button) {
    }
 }
 
+
 function switchTurn() {
 	// TODO: Complete the function
    let status = checkForWinner();
    let turnInfo = document.getElementById('turnInfo')
 
+	 // Set timeout for when computers turn to make it not so instant
    if(playerTurn){
       turnInfo.innerText = "Computer's turn"
       computerMoveTimeout = setTimeout(makeComputerMove, 1000)
@@ -111,6 +115,7 @@ function switchTurn() {
       playerTurn = true
    }
 
+	 // Set the text when a final outcome is realized
    if(status === gameStatus.HUMAN_WINS){
       playerTurn = false;
       turnInfo.innerText = "You win!";
@@ -123,6 +128,9 @@ function switchTurn() {
    }
 }
 
+// Randomize the computers move. 
+// Turn the buttons into an array and filter them based on if they are empty
+// randomly select a button and set its attributes indicating the computers move. 
 function makeComputerMove() {
 	// TODO: Complete the function
    const buttons = getGameBoardButtons()

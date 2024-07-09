@@ -22,3 +22,11 @@
 - Practice with error messaging. 
 - Accessed attributes within html elements. 
 
+## 8.16 LAB: Tic-Tac-Toe (JavaScript)
+- This seemed daughting when first looking at the code. However most of the logic for the tic tac toe was already there. The most difficult part would be making the computers move randomized. I thought it was confusing at first when I was clearing a timeout that was not being set yet in the beginning steps of the problem. Also struggle a little bit with the logic of `switchTurn()` whenever `playerTurn = true` then it is the computer turn and vice versa. 
+
+### Takeaways
+- Using `setTimeout` and `clearTimeout`. Made me understand the purpose of it. Just a delayed function running. 
+- Learned the difference between a NodeList and an Array. In order to find all the buttons that were empty I needed to use the filter method. But a Nodelist does not allow this. 
+- `getGameBoardButtons()` which was already written helped me to understand for loops when dealing with elements. Also demostrated the for... of... loop. instead of `for(let i = 0; i < length; i++)`
+
