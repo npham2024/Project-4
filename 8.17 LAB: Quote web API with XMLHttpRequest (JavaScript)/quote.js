@@ -22,35 +22,30 @@ function showAnonymousQuotes(count) {
    document.querySelector("#quotes").innerHTML = html;
 }
 
+// Instaniated XML Request
 function fetchQuotes(topic, count) {
    // TODO: Modify to use XMLHttpRequest
    let xhr = new XMLHttpRequest();
    xhr.addEventListener("load", responseReceivedHandler)
    xhr.responseType = "json"; 
    xhr.open("GET", `https://wp.zybooks.com/quotes.php?topic=${topic}&count=${count}`)
-   xhr.send();
-   // TODO: Remove the call to showAnonymousQuotes()
-   
+   xhr.send();  
 }
 
+// Take Request response and display in Html
 function responseReceivedHandler() {
    // TODO: Complete the function
 
-   if (this.status === 200) {
-      let quotes = this.response;
+   if(this.status === 200){
+      let quotes = this.response
+      let html = "<ol>";
 
-      // Check if the response is an array
-      if (Array.isArray(quotes)) {
-         let html = "<ol>";
-         for (let quote of quotes) {
-            html += `<li>${quote.quote} - ${quote.source}</li>`;
-         }
-         html += "</ol>";
-         document.querySelector("#quotes").innerHTML = html;
-      } else {
-         document.querySelector("#quotes").innerHTML = "Unexpected response format.";
+      for(let quote of quotes){
+         html += `<li>${quote.quote} - ${quote.source}</li>`;
       }
+      html += "</ol>";
+      document.querySelector("#quotes").innerHTML = html;
    } else {
-      document.querySelector("#quotes").innerHTML = this.response.error;
+      document.querySelector("#quotes").innerHTML = this.response.error
    }
 }

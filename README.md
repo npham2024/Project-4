@@ -30,3 +30,10 @@
 - Learned the difference between a NodeList and an Array. In order to find all the buttons that were empty I needed to use the filter method. But a Nodelist does not allow this. 
 - `getGameBoardButtons()` which was already written helped me to understand for loops when dealing with elements. Also demostrated the for... of... loop. instead of `for(let i = 0; i < length; i++)`
 
+## 8.17 LAB: Quote web API with XMLHttpRequest (JavaScript)
+- This was straight forward for me. Create an api call and then handle the response. However I was unable to be able to display the error json. 
+
+### Takeaways
+- Made an api call. 
+- Handled the ideal 200 response. 
+- Learned a new why of adding elements in html. Use an element starting tag then appending the string with more elements that contain information from the call response. Appending with the closing tag. The set the innerHTML of the div with the new html. 
