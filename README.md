@@ -12,3 +12,13 @@
 - I was able to practice my for loops and basic javascript. 
 - Used document methods to create, append, and located html elements. 
 - Practiced manipluation of element attributes.
+
+## 8.15 LAB: Temperature converter (JavaScript)
+- This was probably the most trickiest of the labs for me. I got to practice using event listeners which was helpful. The logic of it all was what was mixing me. Having to parse the values as well as setting error messages. I was still not able to get the images done correctly. Some passed on the tests but there was one that I could not pass. Not sure why the logic didn't work. 
+
+### Takeaways
+- Continued to use `document.getElementById` in order to locate html elements. 
+- `addEventListeners` to html elements in order to interact with the DOM.
+- Practice with error messaging. 
+- Accessed attributes within html elements. 
+
