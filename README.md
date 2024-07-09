@@ -44,3 +44,11 @@
 ### Takeaways
 - Learned the usefulness of `setInterval`
 
+## 8.19 LAB: To-do list (JavaScript)
+- Overall enjoyed this LAB the most. It put everything in the module together and was easy to follow. The most challenging part of the lab would have to be the `removeTask(event)`. The logic of parentNode. Traversing the elements up from button to list to order list in order to remove the child of the element `ol`. 
+
+### Takeaways
+- Using the keyup event type in order to it make it function as  `addBtnClick()`
+- Using `.focus` on the textbox for the first time. 
+- Using the for... of loop when adding the event listeners to the buttons which tied in from the previous lab. 
+- ParentNode to traverse through html elements. 

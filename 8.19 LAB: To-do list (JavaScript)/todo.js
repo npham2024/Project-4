@@ -5,6 +5,7 @@ function domLoaded() {
    let addButton = document.getElementById('add-btn');
    addButton.addEventListener("click", addBtnClick);
 
+   // Uses enter the same way as clicking the add button
    let textBox = document.getElementById('new-task')
    textBox.addEventListener("keyup", function(event){
       if(event.key === "Enter"){
@@ -13,6 +14,8 @@ function domLoaded() {
    })
 }
 
+// Adds tasks as long as textbox is not empty. 
+// After task is added focuses back on the textbox to add more. 
 function addBtnClick() {
    // TODO: Complete the function
    let text = document.getElementById('new-task')
@@ -23,6 +26,7 @@ function addBtnClick() {
    }
 }
 
+// adds tasks to the list
 function addTask(task) {
    // TODO: Complete the function
    let newTaskLi = document.createElement("li");
@@ -37,6 +41,7 @@ function addTask(task) {
    }
 }
 
+// removes tasks from the list
 function removeTask(event) {
    // TODO: Complete the function
    let li = event.target.parentNode
