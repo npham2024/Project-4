@@ -1,9 +1,13 @@
+// Takes the string of numbers and splits them by the whitespace
+// Also need to convert each string into a Number
 function parseScores(scoresString) {
    // TODO: Compete the function
    let str_arr = scoresString.split(" ").map(Number);
    return str_arr
 }
 
+// Used a for loop to loop through the array and counted each letter grade by incrementing by
+// one depending on the spot in the array
 function buildDistributionArray(scoresArray) {
    // TODO: Compete the function
    let grading_scale = [0,0,0,0,0]
@@ -23,6 +27,9 @@ function buildDistributionArray(scoresArray) {
    return grading_scale
 }
 
+// Used DOM document in order to find the row elements. 
+// Loop through the arr and created elements to match the count of the letter grades. 
+// Loop through arr to add the count in the third row. 
 function setTableContent(userInput) {
    // TODO: Compete the function
    let score_arr = parseScores(userInput)
