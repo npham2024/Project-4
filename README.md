@@ -37,3 +37,10 @@
 - Made an api call. 
 - Handled the ideal 200 response. 
 - Learned a new why of adding elements in html. Use an element starting tag then appending the string with more elements that contain information from the call response. Appending with the closing tag. The set the innerHTML of the div with the new html. 
+
+## 8.18 LAB: Heart image animation (JavaScript)
+- This was overall pretty quick because not much code was needed. However I struggled a little because it felt like I was working backwards whenever I started off with the guard clause of `clearInterval` when the timerId was not null. Also had trouble when passing just `moveImage()` into `setInterval` would not work. It needs to be passed a function reference.
+
+### Takeaways
+- Learned the usefulness of `setInterval`
+

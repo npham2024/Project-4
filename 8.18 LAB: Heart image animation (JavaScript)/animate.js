@@ -14,6 +14,7 @@ function startAnimation(e) {
    let clickY = e.clientY;  
    
    // TODO: Modify the code below
+   // Set Interval for moveImage
    timerId = setInterval(function () {
       moveImage(clickX, clickY);
    }, 10);
@@ -33,6 +34,7 @@ function moveImage(x, y) {
    const centerY = Math.round(y - (img.height / 2));
 
    // TODO: Add code here
+   // Compare values to find out if the heart has reached the clicked point. 
    if (imgX === centerX && imgY === centerY) {
       clearInterval(timerId);
       timerId = null;
